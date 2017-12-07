@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Quản trị website</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="/assets/images/logo.png">
+    <!-- style -->
+    <link rel="stylesheet" href="/assets/animate.css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/glyphicons/glyphicons.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+    <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- build:css ../assets/styles/app.min.css -->
+    <link rel="stylesheet" href="/assets/styles/app.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="/assets/styles/font.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/styles/fonts.css" type="text/css" />
+    <style type="text/css">
+        .navbar-brand img, .navbar-brand svg {
+            max-height: 24px;
+            vertical-align: 0px;
+            display: inline-block;
+        }
+
+        .alert {
+            font-size: 10pt !important;
+            font-family: "Roboto" !important;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="app" id="app">
+        <div id="aside" class="app-aside modal fade nav-dropdown">
+            <div class="left navside dark dk" layout="column">
+                <div class="navbar navbar-md no-radius">
+                    <a class="navbar-brand">
+                        <img src="{/assets/images/logo-M.png" alt="">
+                        <span class="hidden-folded inline">Admin</span>
+                    </a>
+                </div>
+                <a href="#/app/page/profile" ui-sref="app.page.profile">
+                    <span class="pull-left">
+                      <img src="/assets/images/a0.jpg" alt="..." class="w-40 img-circle">
+                    </span>
+                    <span class="clear hidden-folded p-x">
+                        <span class="block _500">Admin</span>
+                        <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>online</small>
+                    </span>
+                </a>
+            </div>
+            <div flex class="hide-scroll">
+                <nav class="scroll nav-light">
+                    <li>
+                        <a>
+                            <span class="nav-caret">
+                                <i class="fa fa-caret-down"></i>
+                            </span>
+                            <span class="nav-icon">
+                                <i class="material-icons">&#xe873;</i>
+                            </span>
+                            <span class="nav-text">Bài viết</span>
+                        </a>
+                        <ul class="nav-sub">
+                            <li ui-sref-active="active">
+                                <a ><span class="nav-text">Danh sách </span></a>
+                            </li>
+                            <li ui-sref-active="active">
+                                <a><span class="nav-text">Tags</span></a>
+                            </li>
+                            <li ui-sref-active="active">
+                                <a><span class="nav-text">Danh mục</span></a>
+                            </li>
+                            <li ui-sref-active="active">
+                                <a><span class="nav-text">Comment</span></a>
+                            </li> 
+                        </ul>
+                    </li>
+                
+                </nav>
+            </div>
+            <div flex-no-shrink>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="content" class="app-content box-shadow-z0" role="main">
+        @RenderBody()
+        <div class="app-footer">
+            <div class="p-a text-xs">
+                <div class="pull-right text-muted">
+                    © Copyright <strong>lÊ TRỌNG TẤN</strong>
+                    <span class="hidden-xs-down">- Version 2.4 </span>
+                    <a ui-scroll-to="content">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
